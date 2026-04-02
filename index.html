@@ -853,7 +853,7 @@ function setupMotion() {
 function useDemoMode(skipModal) {
   if (!skipModal) document.getElementById('modalOverlay').style.display = 'none';
   S.demo = true;
-  S.lat = 11.6643; S.lng = 78.1460;
+  S.lat = 11.15.44; S.lng = 77.36.03;
   initMap(S.lat, S.lng);
   setStatus('DEMO', 'demo');
   addLog('Demo mode active — simulated driving route', 'average');
@@ -1041,7 +1041,7 @@ function demoBuildWindow() {
 function demoGPS() {
   S.demoAngle += 0.012;
   const lat = 11.15.44 + Math.sin(S.demoAngle)*0.004 + Math.cos(S.demoAngle*2.1)*0.001;
-  const lng = 77.36.3 + Math.cos(S.demoAngle)*0.005 + Math.sin(S.demoAngle*1.7)*0.001;
+  const lng = 77.36.03 + Math.cos(S.demoAngle)*0.005 + Math.sin(S.demoAngle*1.7)*0.001;
   if (S.lastLat !== null) S.distance += haversine(S.lastLat, S.lastLng, lat, lng);
   S.lastLat = S.lat = lat;
   S.lastLng = S.lng = lng;
