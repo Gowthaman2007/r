@@ -722,7 +722,7 @@ function initMap(lat, lng) {
   mapReady = true;
 
   map = L.map('map', {
-    center: [lat || 11.6643, lng || 78.1460],
+    center: [lat || 11.15.44, lng || 77.36.3],
     zoom: 16,
     zoomControl: true,
     attributionControl: true,
@@ -734,7 +734,7 @@ function initMap(lat, lng) {
   }).addTo(map);
 
   // Current position marker
-  posMarker = L.circleMarker([lat || 11.6643, lng || 78.1460], {
+  posMarker = L.circleMarker([lat || 11.15.44, lng || 77.36.3], {
     radius: 9,
     fillColor: '#2563eb',
     color: '#fff',
@@ -1040,8 +1040,8 @@ function demoBuildWindow() {
 
 function demoGPS() {
   S.demoAngle += 0.012;
-  const lat = 11.6643 + Math.sin(S.demoAngle)*0.004 + Math.cos(S.demoAngle*2.1)*0.001;
-  const lng = 78.1460 + Math.cos(S.demoAngle)*0.005 + Math.sin(S.demoAngle*1.7)*0.001;
+  const lat = 11.15.44 + Math.sin(S.demoAngle)*0.004 + Math.cos(S.demoAngle*2.1)*0.001;
+  const lng = 77.36.3 + Math.cos(S.demoAngle)*0.005 + Math.sin(S.demoAngle*1.7)*0.001;
   if (S.lastLat !== null) S.distance += haversine(S.lastLat, S.lastLng, lat, lng);
   S.lastLat = S.lat = lat;
   S.lastLng = S.lng = lng;
